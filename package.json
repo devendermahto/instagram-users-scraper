@@ -1,8 +1,7 @@
 {
   "name": "project",
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "author": "",
   "license": "MIT",
